@@ -17,7 +17,4 @@ from pb.pb import create_app
 app = create_app()
 
 if __name__ == '__main__':
-    run_simple('::1', 10002, app,
-               use_reloader=True,
-               use_debugger=True,
-               use_evalex=True)
+    run_simple('0.0.0.0', 8000, app)
